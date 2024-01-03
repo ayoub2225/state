@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import Button from "react-bootstrap/Button";
-
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Mycard from "./components/Mycard";
 
@@ -11,7 +11,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         {this.state.show && <Mycard />}
         <p></p>
         <button
@@ -21,7 +21,6 @@ export default class App extends Component {
         >
           toggle
         </button>
-        
       </div>
     );
   }

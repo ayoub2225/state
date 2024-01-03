@@ -20,17 +20,15 @@ export default class Mycard extends Component {
   }
   render() {
     return (
-      <div>
-        <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={this.state.person.imgSrc} />
-          <Card.Body>
-            <Card.Title>{this.state.person.Name}</Card.Title>
-            <Card.Text>{this.state.person.proffesion}</Card.Text>
-            <Card.Text>{this.state.person.bio}</Card.Text>
-            <p>mounted since {this.state.counter} seconds</p>
-          </Card.Body>
-        </Card>
-      </div>
+      <Card style={{ width: "18rem" }}>
+        <Card.Img variant="top" src={this.state.person.imgSrc} />
+        <Card.Body>
+          <Card.Title>{this.state.person.Name}</Card.Title>
+          <Card.Text>{this.state.person.proffesion}</Card.Text>
+          <Card.Text>{this.state.person.bio}</Card.Text>
+          <p>mounted since {this.state.counter} seconds</p>
+        </Card.Body>
+      </Card>
     );
   }
 }
